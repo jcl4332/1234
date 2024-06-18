@@ -112,6 +112,7 @@ public final class App {
           Thread.sleep(50);
         } catch (InterruptedException e) {
           logger.error(e.getMessage(), e);
+          Thread.currentThread().interrupt();
         }
       }
 
